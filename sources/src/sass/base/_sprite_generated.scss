@@ -1,0 +1,40 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-svg-burger {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(52, 52)*100% auto;
+	width: 52px;
+
+}
+@mixin svg-pos-svg-burger {
+	background-position: 0 0;
+}
+@mixin svg-svg-burger-hover {
+	.svg-svg-burger {
+		@include svg-pos-svg-burger-hover
+	}
+}
+
+.svg-svg-burger:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(52, 52)*100%;
+}
+
+.svg-svg-burger-dims {
+	width: 52px;
+	height: 52px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }

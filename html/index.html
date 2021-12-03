@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__gradient"></div>
+      <div class="header__stars"></div>
+      <div class="header__inner container">
+        <div class="header__top">
+          <div class="header__ms"><img src="images/icons/ms.svg" alt="ms-1" width="108" height="145"></div>
+          <div class="header__center">
+            <div class="header__moon">
+              <picture>
+                <source srcset="images/blocks/moon-mob.webp" media="(max-width: 767px)" type="image/webp">
+                <source srcset="images/blocks/moon-mob.png" media="(max-width: 767px)" type="image/png">
+                <source srcset="images/blocks/moon.webp" type="image/webp"><img src="images/blocks/moon.png" alt="moon" width="108" height="145">
+              </picture>
+            </div>
+            <div class="header__center-inner"><a class="header__logo" href="#">
+                <picture>
+                  <source srcset="images/icons/logo.webp" type="image/webp"><img src="images/icons/logo.png" alt="mission snow 1" width="826" height="210">
+                </picture></a>
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="#">Адвент-календарь</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#">Новогоднее видео</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#">100к1</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#">Подборка настроения</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="#">Трансляция</a></li>
+                </ul>
+              </nav>
+              <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.</p>
+              <div class="header__santa">
+                <picture>
+                  <source srcset="images/blocks/santa.webp" type="image/webp"><img src="images/blocks/santa.png" alt="mission snow 1" width="563" height="738">
+                </picture>
+              </div>
+              <div class="header__time">
+                <picture>
+                  <source srcset="images/blocks/time.webp" type="image/webp"><img src="images/blocks/time.png" alt="time" width="376" height="395">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="header__right"><a class="header__burger" href="#">
+              <svg>
+                <use href="images/sprites/main.stack.svg#svg-burger"></use>
+              </svg></a>
+            <ul class="header__lang">
+              <li class="header__lang-item"><a class="header__lang-btn header__lang-btn--active" href="#">Ru</a></li>
+              <li class="header__lang-item"><a class="header__lang-btn" href="#">Eng</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="mission">
+        <div class="mission__duck">
+          <picture>
+            <source srcset="images/blocks/duck-small.webp" media="(max-width: 1365px)" type="image/webp">
+            <source srcset="images/blocks/duck-small.jpg" media="(max-width: 1365px)" type="image/jpeg">
+            <source srcset="images/blocks/duck.webp" type="image/webp"><img src="images/blocks/duck.png" alt="time" width="475" height="647">
+          </picture>
+        </div>
+        <div class="mission__inner container">
+          <div class="mission__header">
+            <p class="mission__header-lead">Начало миссии через</p>
+            <h2 class="big-title mission__header-title"><span class="mission__header-title__main">12 <span class="mission__header-title__days">days</span></span><span class="mission__header-title__fon">12 <span class="mission__header-title__days">days</span></span></h2>
+            <p class="mission__header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-</p>
+          </div>
+          <div class="mission__list-wrapper">
+            <div class="mission__list swiper-container">
+              <div class="mission__wrapper swiper-wrapper">
+                <div class="mission__item swiper-slide">
+                  <div class="mission__notepad"><img class="mission__notepad-img" src="images/blocks/mission-text.png" alt="блокнот">
+                    <p class="mission__notepad-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra.</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">7.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">8.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">9.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">10.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">11.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">12.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">13.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">14.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">15.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">16.12</p>
+                  </div>
+                </div>
+                <div class="mission__item swiper-slide">
+                  <div class="mission__date"><img class="mission__date-border" src="images/blocks/border.svg" alt="рамка" width="225" height="198">
+                    <p class="mission__date-text">17.12</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next mission-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="hq">
+        <div class="hq__inner container">
+          <div class="hq__header"><img class="hq__donut" src="images/blocks/donut.png" alt="пончик" width="451" height="367">
+            <h2 class="hq__title big-title"><span class="hq__title-main">HQ <span class="hq__title-ms">MS-1</span></span><span class="hq__title-fon">HQ <span class="hq__title-ms">MS-1</span></span></h2>
+            <p class="hq__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-</p>
+          </div>
+          <div class="hq__list">
+            <div class="hq__swiper-wrapper">
+              <div class="hq__swiper swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="hq__item swiper-slide">
+                    <div class="hq__item-img"><span class="hq__item-border"></span>
+                      <div class="hq__item-photo"><img src="images/blocks/hq.jpg" alt="фото"></div>
+                    </div>
+                    <div class="hq__item-info">
+                      <p class="hq__item-name">Алесанда иванов</p>
+                      <p class="hq__item-city">г.Минск</p>
+                    </div>
+                  </div>
+                  <div class="hq__item swiper-slide">
+                    <div class="hq__item-img"><span class="hq__item-border"></span>
+                      <div class="hq__item-photo"><img src="images/blocks/hq.jpg" alt="фото"></div>
+                    </div>
+                    <div class="hq__item-info">
+                      <p class="hq__item-name">Алесанда иванов</p>
+                      <p class="hq__item-city">г.Минск</p>
+                    </div>
+                  </div>
+                  <div class="hq__item swiper-slide">
+                    <div class="hq__item-img"><span class="hq__item-border"></span>
+                      <div class="hq__item-photo"><img src="images/blocks/hq.jpg" alt="фото"></div>
+                    </div>
+                    <div class="hq__item-info">
+                      <p class="hq__item-name">Алесанда иванов</p>
+                      <p class="hq__item-city">г.Минск</p>
+                    </div>
+                  </div>
+                  <div class="hq__item swiper-slide">
+                    <div class="hq__item-img"><span class="hq__item-border"></span>
+                      <div class="hq__item-photo"><img src="images/blocks/hq.jpg" alt="фото"></div>
+                    </div>
+                    <div class="hq__item-info">
+                      <p class="hq__item-name">Алесанда иванов</p>
+                      <p class="hq__item-city">г.Минск</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev hq-prev"></div>
+              <div class="swiper-button-next hq-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="download">
+        <div class="download__inner container">
+          <form class="download__form" action="#"> 
+            <label class="download__form-field">
+              <input type="file"><span>Загрузить <br> фотографию</span>
+            </label>
+            <div class="download__form-result">
+              <h2 class="download__form-title">Загрузить результат</h2>
+              <div class="download__form-inputs">
+                <input class="download__form-input" type="text" placeholder="Имя">
+                <input class="download__form-input" type="text" placeholder="Фамилия">
+                <input class="download__form-input" type="text" placeholder="Город">
+              </div>
+            </div>
+            <button class="download__form-btn"><span>Отправить</span></button>
+          </form>
+        </div>
+      </section>
+      <div class="park">
+        <div class="park__img">
+          <picture>
+            <source srcset="images/blocks/park-768.webp" media="(max-width: 768px)" type="image/webp">
+            <source srcset="images/blocks/park-768.png" media="(max-width: 768px)" type="image/png">
+            <source srcset="images/blocks/park-1366.webp" media="(max-width: 1200px)" type="image/webp">
+            <source srcset="images/blocks/park-1366.png" media="(max-width: 1200px)" type="image/png">
+            <source srcset="images/blocks/park.webp" type="image/webp"><img src="images/blocks/park.png" alt="park" width="1920" height="1296">
+          </picture>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

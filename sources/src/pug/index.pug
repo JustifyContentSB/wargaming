@@ -1,0 +1,201 @@
+extends base/_layout
+block head
+    title Main
+
+block page
+    header.header
+        .header__gradient
+        .header__stars
+        .header__inner.container
+            .header__top
+                .header__ms
+                    img(src="images/icons/ms.svg", alt="ms-1" width="108" height="145")
+                .header__center
+                    .header__moon
+                        picture
+                            source(srcset="images/blocks/moon-mob.webp" media="(max-width: 767px)" type="image/webp")
+                            source(srcset="images/blocks/moon-mob.png" media="(max-width: 767px)" type="image/png")
+                            source(srcset="images/blocks/moon.webp" type="image/webp")
+                            img(src="images/blocks/moon.png" alt="moon" width="108" height="145")
+                    .header__center-inner
+                        a.header__logo(href="#")
+                            picture
+                                source(srcset="images/icons/logo.webp" type="image/webp")
+                                img(src="images/icons/logo.png" alt="mission snow 1" width="826" height="210")
+                        nav.header__nav
+                            ul.header__nav-list
+                                li.header__nav-item
+                                    a.header__nav-link.header__nav-link--active(href="#") Адвент-календарь
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Новогоднее видео
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") 100к1
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Подборка настроения
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Трансляция
+                        p.header__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.
+                        .header__santa
+                            picture
+                                source(srcset="images/blocks/santa.webp" type="image/webp")
+                                img(src="images/blocks/santa.png" alt="mission snow 1" width="563" height="738")
+                        .header__time
+                            picture
+                                source(srcset="images/blocks/time.webp" type="image/webp")
+                                img(src="images/blocks/time.png" alt="time" width="376" height="395")
+                .header__right
+                    a.header__burger(href="#")
+                        svg
+                            use(href="images/sprites/main.stack.svg#svg-burger")
+                    ul.header__lang
+                        li.header__lang-item
+                            a.header__lang-btn.header__lang-btn--active(href="#") Ru
+                        li.header__lang-item
+                            a.header__lang-btn(href="#") Eng
+
+    main.main
+        section.mission
+            .mission__duck
+                picture
+                    source(srcset="images/blocks/duck-small.webp" media="(max-width: 1365px)" type="image/webp")
+                    source(srcset="images/blocks/duck-small.jpg" media="(max-width: 1365px)" type="image/jpeg")
+                    source(srcset="images/blocks/duck.webp" type="image/webp")
+                    img(src="images/blocks/duck.png" alt="time" width="475" height="647")
+            .mission__inner.container
+                .mission__header
+                    p.mission__header-lead Начало миссии через
+                    h2.big-title.mission__header-title
+                        span.mission__header-title__main 12 #[span.mission__header-title__days days]
+                        span.mission__header-title__fon 12 #[span.mission__header-title__days days]
+                    p.mission__header-text.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-
+                .mission__list-wrapper
+                    .mission__list.swiper-container
+                        .mission__wrapper.swiper-wrapper
+                            .mission__item.swiper-slide
+                                .mission__notepad
+                                    img.mission__notepad-img(src="images/blocks/mission-text.png", alt="блокнот")
+                                    p.mission__notepad-text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra.
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 7.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 8.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 9.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 10.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 11.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 12.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 13.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 14.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 15.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 16.12
+                            .mission__item.swiper-slide
+                                .mission__date
+                                    img.mission__date-border(src="images/blocks/border.svg", alt="рамка" width="225" height="198")
+                                    p.mission__date-text 17.12
+                    .swiper-button-next.mission-next
+
+        section.hq
+            .hq__inner.container
+                .hq__header
+                    img.hq__donut(src="images/blocks/donut.png", alt="пончик" width="451" height="367")
+                    h2.hq__title.big-title
+                        span.hq__title-main HQ #[span.hq__title-ms MS-1]
+                        span.hq__title-fon HQ #[span.hq__title-ms MS-1]
+                    p.hq__text.text.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-
+                .hq__list
+                    .hq__swiper-wrapper
+                        .hq__swiper.swiper-container
+                            .swiper-wrapper
+                                .hq__item.swiper-slide
+                                    .hq__item-img
+                                        span.hq__item-border
+                                        .hq__item-photo
+                                            img(src="images/blocks/hq.jpg", alt="фото")
+                                    .hq__item-info
+                                        p.hq__item-name Алесанда иванов
+                                        p.hq__item-city г.Минск
+                                .hq__item.swiper-slide
+                                    .hq__item-img
+                                        span.hq__item-border
+                                        .hq__item-photo
+                                            img(src="images/blocks/hq.jpg", alt="фото")
+                                    .hq__item-info
+                                        p.hq__item-name Алесанда иванов
+                                        p.hq__item-city г.Минск
+                                .hq__item.swiper-slide
+                                    .hq__item-img
+                                        span.hq__item-border
+                                        .hq__item-photo
+                                            img(src="images/blocks/hq.jpg", alt="фото")
+                                    .hq__item-info
+                                        p.hq__item-name Алесанда иванов
+                                        p.hq__item-city г.Минск
+                                .hq__item.swiper-slide
+                                    .hq__item-img
+                                        span.hq__item-border
+                                        .hq__item-photo
+                                            img(src="images/blocks/hq.jpg", alt="фото")
+                                    .hq__item-info
+                                        p.hq__item-name Алесанда иванов
+                                        p.hq__item-city г.Минск
+                        .swiper-button-prev.hq-prev
+                        .swiper-button-next.hq-next
+        section.download
+            .download__inner.container
+                form.download__form(action="#") 
+                    label.download__form-field
+                        input(type="file")
+                        span Загрузить #[br] фотографию
+                    .download__form-result
+                        h2.download__form-title Загрузить результат
+                        .download__form-inputs
+                            input.download__form-input(type="text" placeholder="Имя")
+                            input.download__form-input(type="text" placeholder="Фамилия")
+                            input.download__form-input(type="text" placeholder="Город")
+                    button.download__form-btn #[span Отправить]
+
+        .park
+            .park__img
+                picture
+                    source(srcset="images/blocks/park-768.webp" media="(max-width: 768px)" type="image/webp")
+                    source(srcset="images/blocks/park-768.png" media="(max-width: 768px)" type="image/png")
+                    source(srcset="images/blocks/park-1366.webp" media="(max-width: 1200px)" type="image/webp")
+                    source(srcset="images/blocks/park-1366.png" media="(max-width: 1200px)" type="image/png")
+                    source(srcset="images/blocks/park.webp" type="image/webp")
+                    img(src="images/blocks/park.png" alt="park" width="1920" height="1296")
+                
+            
+
+
+
