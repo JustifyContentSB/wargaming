@@ -62,6 +62,16 @@
          &:focus,
          &:active
             background-image: url('../images/blocks/download-btn-hover.png')
+   &-xmas
+      margin-bottom: 30px
+      .download
+         &__form
+            &-result
+               order: -1
+            &-field
+               margin: 0 auto
+            &-btn
+               margin-left: 0
 
 @media screen and (max-width: 1439px)
    .download
@@ -70,6 +80,15 @@
             margin-right: 60px
          &-result
             flex-grow: 1
+      &-xmas
+         .download
+            &__form
+               &-result
+                  flex-grow: 0
+               &-field
+                  margin: 0 auto
+               &-btn
+                  margin-left: 0
 
 @media screen and (max-width: 1200px)
    .download

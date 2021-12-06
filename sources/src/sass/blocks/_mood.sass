@@ -1,0 +1,324 @@
+.mood
+   color: #000
+   .FLresult
+      position: absolute
+      top: 60px
+      left: 0
+      right: 0
+      text-indent: 30px
+      color: red
+      font-size: 13px
+   &__title
+      margin-bottom: 20px
+      font-weight: 400
+      font-size: 86px
+      line-height: 121px
+      font-family: var(--plasma)
+      position: relative
+      text-align: center
+      white-space: nowrap
+      color: var(--accent)
+      text-shadow: 1px 2px 0 #000, 1px 2px 1px #000, 1px -2px 1px #000, 0px 0px 0 #000, 1px 1px 0 #000
+      &-main
+         position: relative
+         z-index: 10
+      &-fon
+         position: absolute
+         left: 50%
+         transform: translate(-50%)
+         text-shadow: 0px 0px 20px #81E03D
+      &-easy
+         color: #fff
+   &__lead
+      width: 100%
+      max-width: 505px
+      margin: 0 auto
+      margin-bottom: 0
+      text-align: center
+      font-weight: 500
+      font-size: 18px
+      line-height: 150%
+      color: #fff
+   &__box
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      &-donut
+         display: none
+      &-item
+         width: 100%
+         max-width: 706px
+         display: flex
+         flex-direction: column
+         align-items: center
+      &-title
+         margin-bottom: 45px
+         font-size: 36px
+         line-height: 120%
+         font-family: var(--voronov)
+         font-weight: 400
+      &-theme
+         width: 100%
+         max-width: 625px
+         padding: 200px 120px 120px
+         height: 719px
+         background: url('../images/blocks/mood-text.png')
+         background-repeat: no-repeat
+         background-size: 100% 100%
+         &__inner
+            height: 100%
+            overflow-y: auto
+      &-list
+         li
+            margin-bottom: 8px
+            font-size: 18px
+            line-height: 150%
+      &-manage
+         width: 100%
+         max-width: 706px
+         height: 495px
+         background: url('../images/blocks/mood-form.png')
+         background-repeat: no-repeat
+         background-size: 100% 100%
+         &__top
+            position: relative
+            .FLresult
+               padding: 0 0 5px
+               display: block
+               width: 100%
+               position: static
+               text-align: center
+         &__inner
+            height: 100%
+            padding: 200px 120px 40px 130px
+            overflow-y: auto
+            &--textarea
+               padding-top: 150px
+         &__bottom
+            display: flex
+            align-items: center
+            position: relative
+         &__label
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            max-width: 385px
+            height: 56px
+            background: url('../images/blocks/field.png')
+            background-size: 100% 100%
+            input
+               width: 100%
+               height: 100%
+               padding: 13px 30px
+               border: none
+               background: transparent
+               font-weight: 500
+               font-size: 14px
+               line-height: 100%
+               color: #000
+               &::placeholder
+                  color: #8A93A7
+         &__ok
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 62px
+            height: 62px
+            margin-left: auto
+            position: relative
+            &-rose, &-green
+               position: absolute
+               left: 0
+               right: 0
+               top: 0
+               bottom: 0
+            &-rose
+               opacity: 0
+               left: 1px
+               top: -2px
+            &:hover,
+            &:focus,
+            &:active
+               .mood__box-manage__ok-rose
+                  opacity: 1
+         &__textarea
+            background: url('../images/blocks/mood-textarea.png')
+            background-repeat: no-repeat
+            background-size: 100% 100%
+            width: 100%
+            max-width: 429px
+            margin-bottom: 8px
+            textarea
+               padding: 25px 27px
+               border: none
+               background: transparent
+               resize: none
+               width: 100%
+               max-width: 429px
+               height: 100px
+               font-weight: 500
+               font-size: 14px
+               line-height: 27px
+               color: #000
+               &::placeholder
+                  color: #8A93A7
+         &__send
+            display: flex
+            justify-content: center
+            align-items: center
+            background: url('../images/blocks/mood-send.png'), url('../images/blocks/mood-send-hover.png')
+            background-size: 100% 100%
+            font-weight: 500
+            font-size: 18px
+            line-height: 27px
+            text-align: center
+            width: 182px
+            height: 52px
+            margin: 0 auto
+            margin-bottom: 10px
+            &:hover,
+            &:focus,
+            &:active
+               background-image: url('../images/blocks/mood-send-hover.png')
+   &-images
+      position: relative
+      margin-top: -140px
+      &__inner
+         position: relative
+      &__santa
+         position: relative
+         left: 12%
+      &__duck
+         position: absolute
+         left: -10%
+         top: 22%
+      &__donut
+         position: absolute
+         right: -10%
+         bottom: 0
+
+@media screen and (max-width: 1600px)
+   .mood
+      &-images
+         margin-top: 0
+         &__santa
+            width: 500px
+            left: 50%
+            transform: translateX(-50%)
+         &__duck
+            left: 0
+         &__donut
+            right: 0
+      &__box
+         &-item
+            max-width: 600px
+
+@media screen and (max-width: 1279px)
+   .mood
+      &__title
+         font-size: 60px
+         line-height: 120%
+      &__box
+         flex-direction: column
+         align-items: center
+         &-manage
+            margin-top: -80px
+      &-images
+         &__santa
+            width: 400px
+         &__donut
+            width: 250px
+         &__duck
+            width: 200px
+      .FLresult
+         top: 60px
+         text-indent: 10px
+
+@media screen and (max-width: 767px)
+   .mood
+      &__inner
+         padding: 0
+      &__box
+         &-item
+            max-width: 360px
+            position: relative
+            &--1
+               padding-bottom: 120px
+               &::after
+                  content: ''
+                  position: absolute
+                  bottom: -60px
+                  left: 0
+                  right: 0
+                  height: 166px
+                  background: url('../images/blocks/mood-stars.svg')
+                  background-position: center
+         &-theme
+            padding:  100px 60px 60px
+            height: 417px
+         &-title
+            margin-bottom: 10px
+            font-size: 30px
+            line-height: 110%
+         &-list
+            li
+               font-size: 16px
+               line-height: 120%
+               margin-bottom: 5px
+         &-manage
+            max-width: 360px
+            height: 366px
+            margin-top: -40px
+            background-image: url('../images/blocks/mood-form-mob-2.png')
+            &--1
+               height: 269px
+               background-image: url('../images/blocks/mood-form-mob-1.png')
+            &__inner
+               padding: 100px 50px 50px
+               &--textarea
+                  padding-top: 70px
+            &__label
+               max-width: 233px
+               height: 34px
+            &__ok
+               width: 37px
+               min-width: 37px
+               height: 37px
+            &__send
+               max-width: 135px
+               height: 39px
+               font-size: 16px
+         &-donut
+            display: block
+            position: absolute
+            bottom: 0
+            left: -10px
+      &__title
+         padding: 0 15px
+         width: 100%
+         max-width: 400px
+         margin: 0 auto
+         margin-bottom: 30px
+         font-size: 48px
+         white-space: normal
+         &-fon
+            left: 0
+            top: 0
+            transform: translate(0)
+      &__lead
+         padding: 0 15px
+         font-size: 16px
+      &-images
+         background: url('../images/blocks/mood-stars.svg')
+         background-position: center
+         &__duck
+            display: none
+         &__donut
+            display: none
+         &__santa
+            width: 350px
+      .FLresult
+         top: 40px
+         text-indent: 0
+         font-size: 11px

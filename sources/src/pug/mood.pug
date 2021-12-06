@@ -1,0 +1,105 @@
+extends base/_layout
+block head
+    title Easy Xmas mood
+
+block prepend body
+    body.body-xmas
+
+block page
+    header.header.header-mood
+        .header__gradient
+        .header__stars
+        .header__inner.container
+            .header__top
+                .header__ms
+                    img(src="images/icons/ms.svg", alt="ms-1" width="108" height="145")
+                .header__center
+                    .header__center-inner
+                        a.header__logo(href="#")
+                            picture
+                                source(srcset="images/icons/logo.webp" type="image/webp")
+                                img(src="images/icons/logo.png" alt="mission snow 1" width="826" height="210")
+                        nav.header__nav
+                            ul.header__nav-list
+                                li.header__nav-item
+                                    a.header__nav-link.header__nav-link--active(href="#") Адвент-календарь
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Новогоднее видео
+                                li.header__nav-item
+                                    a.header__nav-link(href="100k1.html") 100к1
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Подборка настроения
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Трансляция
+                .header__right
+                    a.header__burger(href="#")
+                        img.header__burger-icon(src="images/icons/burger.svg", alt="burger menu")
+                        img.header__burger-icon.header__burger-hidden(src="images/icons/burger-hover.svg", alt="burger menu")
+                    ul.header__lang
+                        li.header__lang-item
+                            a.header__lang-btn.header__lang-btn--active(href="#") Ru
+                        li.header__lang-item
+                            a.header__lang-btn(href="#") Eng
+
+    main.main
+        section.mood
+            .mood__inner.container
+                h2.mood__title
+                    span.mood__title-main 
+                        span.mood__title-easy   Easy 
+                        |   Xmas mood
+                    span.mood__title-fon 
+                        span.mood__title-easy   Easy 
+                        |   Xmas mood
+                p.mood__lead Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac
+                .mood__box
+                    .mood__box-item.mood__box-item--1
+                        .mood__box-theme
+                            .mood__box-theme__inner
+                                h3.mood__box-title Музыка
+                                ul.mood__box-list
+                                    li Название трека
+                                    li Название трека
+                                    li Название трека
+                                    li Название трека
+                        .mood__box-manage.mood__box-manage--1
+                            .mood__box-manage__inner
+                                .mood__box-manage__top
+                                    p.mood__box-title Добавить трек
+                                .mood__box-manage__bottom
+                                    label.mood__box-manage__label
+                                        input(type="text" placeholder="Вставить ссылку")
+                                    button.mood__box-manage__ok
+                                        img.mood__box-manage__ok-green(src="images/blocks/ok-green.png", alt="ok" width="62" height="62")
+                                        img.mood__box-manage__ok-rose(src="images/blocks/ok-rose.png", alt="ok" width="62" height="62")
+                                    span.FLresult   Не заполнили название трека или ссылку
+                        img.mood__box-donut(src="images/blocks/textarea-donut.png", alt="donut" width="265")
+                    .mood__box-item
+                        .mood__box-theme
+                            .mood__box-theme__inner
+                                h3.mood__box-title Фильмы
+                                ul.mood__box-list
+                                    li Название фильма
+                                    li Название фильма
+                                    li Название фильма
+                                    li Название фильма
+                        .mood__box-manage
+                            .mood__box-manage__inner.mood__box-manage__inner--textarea
+                                .mood__box-manage__top
+                                    .mood__box-manage__textarea
+                                        textarea(name="", cols="30", rows="10" placeholder="Название фильма...")
+                                    span.FLresult   Не заполнили название трека или ссылку
+                                    button.mood__box-manage__send Отправить
+                                .mood__box-manage__bottom
+                                    label.mood__box-manage__label
+                                        input(type="text" placeholder="Вставить ссылку")
+                                    button.mood__box-manage__ok
+                                        img.mood__box-manage__ok-green(src="images/blocks/ok-green.png", alt="ok" width="62" height="62")
+                                        img.mood__box-manage__ok-rose(src="images/blocks/ok-rose.png", alt="ok" width="62" height="62")
+                                    span.FLresult   Не заполнили название трека или ссылку
+        .mood-images
+            .mood-images__inner.container
+                img.mood-images__duck(src="images/blocks/duck-reverse.png", alt="duck" width="247")
+                img.mood-images__santa(src="images/blocks/mood-santa.png", alt="santa" width="638" height="575")
+                img.mood-images__donut(src="images/blocks/textarea-donut.png", alt="donut" width="411" height="338")
+

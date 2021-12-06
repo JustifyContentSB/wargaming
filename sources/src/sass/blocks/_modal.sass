@@ -1,0 +1,64 @@
+.modal
+   position: fixed
+   z-index: 1000
+   left: 50%
+   top: 50%
+   transform: translate(-50%, -50%)
+   overflow-y: auto
+   &__close
+      position: absolute
+      right: 0
+      top: 0
+   &-oops
+      width: 1000px
+      height: 825px
+      &__img
+         position: absolute
+         bottom: 130px
+         left: 120px
+      &__text
+         width: 100%
+         max-width: 386px
+         height: 170px
+         position: absolute
+         z-index: 20
+         top: 192px
+         left: 250px
+         color: #000
+         font-family: var(--voronov)
+         font-weight: 400
+         font-size: 24px
+         line-height: 36px
+         display: flex
+         justify-content: center
+         align-items: center
+         span
+            width: 100%
+            max-width: 265px
+
+@media screen and (max-width: 1200px)
+   .modal
+      &__close
+         width: 50px
+         height: 50px
+      &-oops
+         width: 300px
+         height: 100vh
+         max-height: 500px
+         &__fon
+            width: 297px
+            height: 350px
+            position: absolute
+            bottom: 16px
+            left: 0
+            right: 0
+         &__img
+            display: none
+         &__text
+            max-width: 170px
+            left: 50px
+            top: auto
+            bottom: 130px
+            font-size: 18px
+            line-height: 27px
+

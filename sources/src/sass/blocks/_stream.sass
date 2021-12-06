@@ -1,0 +1,203 @@
+.stream
+   .mood
+      &__title
+         &-main
+            width: 100%
+         &-fon
+            width: 100%
+   &__inner
+      max-width: 1435px
+   &__header
+      margin-bottom: 90px
+   &__lead
+      width: 100%
+      max-width: 505px
+      margin: 0 auto
+      font-weight: 500
+      font-size: 18px
+      line-height: 150%
+      color: #fff
+      text-align: center
+   &__content
+      &-saturn
+         position: absolute
+         left: -110px
+         top: -175px
+      &-object
+         position: absolute
+         right: -200px
+         top: -300px
+      &-bl
+         border: 5px solid var(--accent)
+         filter: drop-shadow(0px 0px 20px #81E03D)
+         background: #00102E
+         position: relative
+         z-index: 5
+      &-top
+         width: 80%
+         max-width: 1125px
+         margin: 0 auto
+         height: 587px
+         display: flex
+         justify-content: space-between
+         position: relative
+         z-index: 6
+      &-video
+         margin-right: 20px
+         flex-grow: 1
+         height: 100%
+         display: flex
+         justify-content: center
+         align-items: center
+         text-transform: uppercase
+         font-weight: 500
+         font-size: 64px
+         line-height: 78px
+         color: #77FFF7
+      &-chat
+         width: 300px
+         min-width: 300px
+         height: 100%
+      &-bottom
+         position: relative
+         z-index: 5
+      &-planet
+         position: absolute
+         top: -60px
+         right: 60px
+      &-img
+         position: relative
+         z-index: 5
+      &-date
+         position: absolute
+         z-index: 6
+         left: 49%
+         transform: translateX(-50%)
+         font-weight: normal
+         font-size: 60px
+         line-height: 100%
+         text-align: center
+         letter-spacing: -0.18em
+         color: var(--accent)
+         bottom: 32%
+         font-family: 'Tygra'
+
+@media screen and (max-width: 1600px)
+   .stream
+      &__content
+         &-object
+            width: 200px
+            right: -10%
+
+@media screen and (max-width: 1365px)
+   .stream
+      &__content
+         padding-bottom: 150px
+         &-saturn
+            width: 200px
+            left: 0
+            top: -100px
+         &-planet
+            top: auto
+            bottom: -150px
+            left: 50%
+            transform: translateX(-50%)
+            right: auto
+
+@media screen and (max-width: 1200px)
+   .stream
+      overflow: hidden
+      &__content
+         &-saturn
+            top: 250px
+            left: -5%
+         &-object
+            top: -10%
+            right: -5%
+         &-top
+            width: 80%
+            flex-direction: column
+            height: auto
+         &-video
+            height: 300px
+            margin-right: 0
+            margin-bottom: 50px
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+         &-chat
+            width: 100%
+            height: 329px
+         &-date
+            font-size: 40px
+
+@media screen and (max-width: 800px)
+   .stream
+      &__header
+         margin-bottom: 50px
+      &__content
+         &-date
+            font-size: 26px
+      &__lead
+         font-size: 16px
+         line-height: 24px
+
+@media screen and (max-width: 767px)
+   .stream
+      &__content
+         padding-bottom: 100px
+         position: relative
+         &::before
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            top: 330px
+            width: 100%
+            height: 165px
+            background: url('../images/blocks/stream-stars-1.svg')
+            background-position: center
+         &::after
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            height: 165px
+            background: url('../images/blocks/stream-stars-2.svg')
+            background-position: center
+         &-saturn
+            width: 90px
+            top: 285px
+         &-object
+            width: 117px
+            top: -7%
+            right: -8%
+         &-planet
+            width: 166px
+            bottom: -160px
+
+@media screen and (max-width: 460px)
+   .stream
+      &__title
+         max-width: 280px
+         margin: 0 auto
+      &__inner
+         padding: 0
+      &__header
+         padding: 0 15px
+      &__content
+         &::before
+            top: 180px
+         &-top
+            width: calc(100% - 30px)
+         &-chat
+            min-width: auto
+         &-video
+            height: 185px
+         &-date
+            bottom: 36%
+            font-size: 18px
+         &-saturn
+            top: 170px

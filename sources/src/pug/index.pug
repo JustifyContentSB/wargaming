@@ -29,7 +29,7 @@ block page
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Новогоднее видео
                                 li.header__nav-item
-                                    a.header__nav-link(href="#") 100к1
+                                    a.header__nav-link(href="100k1.html") 100к1
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Подборка настроения
                                 li.header__nav-item
@@ -46,8 +46,8 @@ block page
                                 img(src="images/blocks/time.png" alt="time" width="376" height="395")
                 .header__right
                     a.header__burger(href="#")
-                        svg
-                            use(href="images/sprites/main.stack.svg#svg-burger")
+                        img.header__burger-icon(src="images/icons/burger.svg", alt="burger menu")
+                        img.header__burger-icon.header__burger-hidden(src="images/icons/burger-hover.svg", alt="burger menu")
                     ul.header__lang
                         li.header__lang-item
                             a.header__lang-btn.header__lang-btn--active(href="#") Ru
@@ -66,14 +66,13 @@ block page
                 .mission__header
                     p.mission__header-lead Начало миссии через
                     h2.big-title.mission__header-title
-                        span.mission__header-title__main 12 #[span.mission__header-title__days days]
-                        span.mission__header-title__fon 12 #[span.mission__header-title__days days]
+                        img(src="images/icons/12-days.svg", alt="12 days" width="545" height="168")
                     p.mission__header-text.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-
                 .mission__list-wrapper
                     .mission__list.swiper-container
                         .mission__wrapper.swiper-wrapper
-                            .mission__item.swiper-slide
+                            .mission__item.mission__item-task.swiper-slide
                                 .mission__notepad
                                     img.mission__notepad-img(src="images/blocks/mission-text.png", alt="блокнот")
                                     p.mission__notepad-text.
@@ -188,12 +187,29 @@ block page
         .park
             .park__img
                 picture
+                    source(srcset="images/blocks/park-mob.webp" media="(max-width: 500px)" type="image/webp")
+                    source(srcset="images/blocks/park-mob.png" media="(max-width: 500px)" type="image/png")
                     source(srcset="images/blocks/park-768.webp" media="(max-width: 768px)" type="image/webp")
                     source(srcset="images/blocks/park-768.png" media="(max-width: 768px)" type="image/png")
                     source(srcset="images/blocks/park-1366.webp" media="(max-width: 1200px)" type="image/webp")
                     source(srcset="images/blocks/park-1366.png" media="(max-width: 1200px)" type="image/png")
                     source(srcset="images/blocks/park.webp" type="image/webp")
-                    img(src="images/blocks/park.png" alt="park" width="1920" height="1296")
+                    img(src="images/blocks/park.png" alt="park" width="1920" height="1437")
+
+    //- .modal.modal-oops
+    //-     a.modal__close(href="#")
+    //-         img(src="images/icons/close.svg", alt="close" width="79" height="79")
+    //-     p.modal-oops__text
+    //-         span.
+    //-             Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    //-     .modal-oops__fon
+    //-         picture
+    //-             source(srcset="images/blocks/oops-mob.webp" media="(max-width: 1200px)" type="image/webp")
+    //-             source(srcset="images/blocks/oops-mob.png" media="(max-width: 1200px)" type="image/png")
+    //-             source(srcset="images/blocks/oops.webp" type="image/webp")
+    //-             img(src="images/blocks/oops.png" alt="oops" width="1000" height="725")
+    //-     img.modal-oops__img(src="images/blocks/oops-text.svg", alt="oops" width="342" height="183")
+
                 
             
 

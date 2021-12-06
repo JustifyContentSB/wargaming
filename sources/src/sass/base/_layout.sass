@@ -31,8 +31,20 @@ body
     min-height: 100vh
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+    overflow-x: hidden
     &.no-scroll
         overflow: hidden
+    &.body-100k
+        background: url('../images/blocks/stars-100k.svg'), #000A24
+        background-position: center
+    &.body-xmas
+        background: url('../images/blocks/stars-100k.svg'), #000A24
+        background-position: center
+
+@media screen and (max-width: 767px)
+    body
+        &.body-100k, &.body-xmas
+            background: #000A24
 
 .visually-hidden:not(:focus):not(:active) 
     position: absolute

@@ -4,7 +4,7 @@ $(document).ready(function(){
   if($(window).width() < 820) {
     var missionSwiper = new Swiper(".mission__list", {
       slidesPerView: 'auto',
-      spaceBetween: 30,
+      spaceBetween: 0,
       loop: true,
       navigation: {
         nextEl: ".mission-next",
@@ -42,10 +42,18 @@ $(document).ready(function(){
     
     $('.header__burger').on('click', function(e) {
       e.preventDefault();
-      $('.header').toggleClass('header__--active');
+      $('.header').toggleClass('header--active');
       $('.header__nav').toggleClass('header__nav--active');
+      $('.header__burger-icon').toggleClass('header__burger-hidden');
       $('body').toggleClass('no-scroll');
     })
+
+    $(".question__footer-up").on("touchend, click", function (e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $('.header').offset().top
+      }, 400);
+    });
 });
 
 // Your functions here

@@ -1,0 +1,103 @@
+extends base/_layout
+block head
+    title MS-1 Xmas Carol
+
+block prepend body
+    body.body-xmas
+
+block page
+    header.header.header-xmas
+        .header__stars
+        .header__gradient
+        .header__inner.container
+            .header__top
+                .header__ms
+                    img(src="images/icons/ms.svg", alt="ms-1" width="108" height="145")
+                .header__center
+                    .header__center-inner
+                        a.header__logo(href="#")
+                            picture
+                                source(srcset="images/icons/logo.webp" type="image/webp")
+                                img(src="images/icons/logo.png" alt="mission snow 1" width="826" height="210")
+                        nav.header__nav
+                            ul.header__nav-list
+                                li.header__nav-item
+                                    a.header__nav-link.header__nav-link--active(href="#") Адвент-календарь
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Новогоднее видео
+                                li.header__nav-item
+                                    a.header__nav-link(href="100k1.html") 100к1
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Подборка настроения
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Трансляция
+                    img.header__xmas-time(src="images/blocks/xmas-time.png", alt="time" width="398" height="468")
+                .header__right
+                    a.header__burger(href="#")
+                        img.header__burger-icon(src="images/icons/burger.svg", alt="burger menu")
+                        img.header__burger-icon.header__burger-hidden(src="images/icons/burger-hover.svg", alt="burger menu")
+                    ul.header__lang
+                        li.header__lang-item
+                            a.header__lang-btn.header__lang-btn--active(href="#") Ru
+                        li.header__lang-item
+                            a.header__lang-btn(href="#") Eng
+
+    main.main
+        section.xmas
+            .xmas__inner.container
+                .xmas__title
+                    img.xmas__title-desk(src="images/mstitle.svg", alt="MS-1 Xmas challenge" width="933" height="141")
+                    img.xmas__title-mob(src="images/mstitlemob.svg", alt="MS-1 Xmas challenge" width="296" height="142")
+                .xmas__box
+                    .xmas__video
+                        span.xmas__video-border
+                        .xmas__video-box
+                            p Video
+                    .xmas__text
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.- #[br]
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        p.
+                            Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-
+                    .xmas__descr
+                        h3.xmas__descr-title Дайджест MS-1 Xmas challenge:
+                        ol.xmas__descr-list
+                            li.
+                                Достать новогоднюю гирлянду и подготовить камеру телефона. WARNING! Протереть фронтальную или основную камеру перед съёмкой.
+                            li.
+                                Найти уютное место для съёмки видео вблизи розетки для того, чтобы гирлянда сияла в кадре.
+                            li.
+                                Установить фронтальную камеру телефона перед собой в горизонтальном положении и нажать кнопку «Начать съёмку» (формат видео может быть FullHD или HD, но не 4К). Продолжительность записанного видео – до 10 секунд, действие – быстрое, без запинок (смайлик)
+                            li.
+                                Взять в руки гирлянду → Представить, что забираешь гирлянду справа за кадром и передаешь её влево за кадр.
+                            li.
+                                Пересмотреть видео и убедиться, что получилось отлично.
+                            li.
+                                Выслать видео.
+                        p.xmas__descr-wish Да пребудет с тобой сила или то, что тебе приносит удачу!
+        section.download.download-xmas
+            .download__inner.container
+                form.download__form(action="#") 
+                    label.download__form-field
+                        input(type="file")
+                        span Загрузить #[br] фотографию
+                    .download__form-result
+                        h2.download__form-title Загрузить результат
+                        .download__form-inputs
+                            input.download__form-input(type="text" placeholder="Имя")
+                            input.download__form-input(type="text" placeholder="Фамилия")
+                            input.download__form-input(type="text" placeholder="Город")
+                    button.download__form-btn #[span Отправить]
+
+        section.xmas-images
+            .xmas-images__inner.container
+                img.xmas-images__santa(src="images/blocks/xmas-santa.png", alt="santa" width="524" height="620")
+                .xmas-images__duck
+                    img.xmas-images__duck-desk(src="images/blocks/duck-reverse.png", alt="duck" width="433" height="370")
+                    img.xmas-images__duck-mob(src="images/blocks/duck-small.png", alt="duck" width="170")
+                .xmas-images__moon
+                    img.xmas-images__moon-desk(src="images/blocks/xmas-moon.png", alt="moon" width="1364" height="474")
+                    img.xmas-images__moon-mob(src="images/blocks/xmas-moon-mob.png", alt="moon" width="360" height="427")
+                img.xmas-images__donut(src="images/blocks/textarea-donut.png", alt="donut" width="411")
+
+    

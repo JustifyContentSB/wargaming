@@ -17,6 +17,7 @@
         left: -7px
         right: 0
         background: url('../images/blocks/stars.svg')
+        background-position: center
     &__inner
         max-width: 1280px
         position: relative
@@ -73,14 +74,14 @@
             &--active
                 color: var(--accent)
                 &::after
-                    content: ''
+                    content: ""
                     position: absolute
                     bottom: 0
                     left: 0
                     right: 0
                     height: 30px
-                    background: url('../images/blocks/line.png')
-                    background-size: contain
+                    background: url(../images/blocks/line.png)
+                    background-size: 100% 20px
                     background-repeat: no-repeat
     &__text
         max-width: 702px
@@ -91,6 +92,9 @@
         text-align: center
         position: relative
         z-index: 10
+        &-stress
+            top: -38px
+            max-width: 760px
     &__santa
         margin-top: -45px
         animation-name: santaMedidation
@@ -101,6 +105,10 @@
         position: absolute
         left: -260px
         bottom: 111px
+    &__hourglass
+        position: absolute
+        bottom: 0
+        left: 0
     &__lang
         margin-top: 30px
         display: flex
@@ -128,6 +136,46 @@
     &__right
         display: flex
         align-items: center
+    &__hat
+        position: absolute
+        right: -320px
+        bottom: 385px
+    &__stress
+        position: relative
+        top: -55px
+    &__hourglass
+        position: absolute
+        left: -266px
+        bottom: -72px
+    &__100k1
+        .header
+            &__stars
+                background-image: url('../images/blocks/stars-100k.svg')
+                height: 100%
+    &__xmas
+        &-time
+            position: absolute
+            left: -40%
+            bottom: -72%
+    &-xmas, &-mood, &-stream
+        .header
+            &__stars
+                height: 100%
+
+@media screen and (max-width: 1700px)
+    .header
+        &__hat
+            width: 400px
+            right: -150px
+        &__hourglass
+            width: 300px
+            left: -200px
+        &__xmas
+            &-time
+                width: 300px
+                position: absolute
+                left: -25%
+                bottom: -50%
 
 @media screen and (max-width: 1440px)
     .header
@@ -142,6 +190,38 @@
         &__time
             width: 300px
             height: auto
+        &__xmas
+            &-time
+                width: 200px
+                position: absolute
+                left: -15%
+                bottom: -40%
+
+@media screen and (max-width: 1430px)
+    .header
+        &__hourglass
+            width: 250px
+            left: -100px
+
+@media screen and (max-width: 1365px)
+    .header
+        &__stress
+            width: 600px
+        &__hourglass
+            bottom: 25px
+        &__hat
+            width: 300px
+            bottom: 300px
+            right: -50px
+
+@media screen and (max-width: 1279px)
+    .header
+        &__100k1
+            overflow-x: hidden
+        &__hourglass
+            display: none
+        &__hat
+            display: none
 
 @media screen and (max-width: 1200px)
     .header
@@ -149,8 +229,13 @@
         &.header--active
             position: relative
             z-index: 1000
+            background: #000a24
+            .header__gradient
+                display: none
         &__burger
             display: block
+            &-hidden
+                display: none
         &__lang
             margin-top: 0
             margin-left: 30px
@@ -164,6 +249,7 @@
         &__time
             left: 0
             bottom: 180px
+            width: 200px
         &__nav
             display: none
             margin-bottom: 0
@@ -191,14 +277,16 @@
             position: absolute
             right: 15px
             top: 17px
-
-@media screen and (max-width: 1200px)
-    .header
-        &__time
-            width: 200px
+        &__xmas
+            &-time
+                display: none
 
 @media screen and (max-width: 767px)
     .header
+        &__100k1, &-xmas
+            .header
+                &__stars
+                    display: none
         &__text
             font-size: 16px
         &__time
@@ -206,6 +294,8 @@
             left: -40px
         &__santa
             width: 400px
+        &__stress
+            width: 90%
 
 @media screen and (max-width: 460px)
     .header
@@ -217,3 +307,5 @@
             margin-top: 16px
         &__nav
             top: 80px
+        &__stress
+            width: 100%

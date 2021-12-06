@@ -1,0 +1,215 @@
+extends base/_layout
+block head
+    title 100k1
+
+block prepend body
+    body.body-100k
+
+block page
+    header.header.header__100k1
+        .header__gradient
+        .header__stars
+        .header__inner.container
+            .header__top
+                .header__ms
+                    img(src="images/icons/ms.svg", alt="ms-1" width="108" height="145")
+                .header__center
+                    .header__center-inner
+                        a.header__logo(href="#")
+                            picture
+                                source(srcset="images/icons/logo.webp" type="image/webp")
+                                img(src="images/icons/logo.png" alt="mission snow 1" width="826" height="210")
+                        nav.header__nav
+                            ul.header__nav-list
+                                li.header__nav-item
+                                    a.header__nav-link.header__nav-link--active(href="#") Адвент-календарь
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Новогоднее видео
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") 100к1
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Подборка настроения
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Трансляция
+                        .header__stress
+                            picture
+                                source(srcset="images/blocks/stress.webp" type="image/webp")
+                                img(src="images/blocks/stress.png" alt="Interdimensional stress" width="752" height="560")
+                        p.header__text.header__text-stress.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur.
+                        img.header__hat(src="images/blocks/hat.png", alt="hat" width="524" height="355")
+                        .header__hourglass
+                            picture
+                                source(srcset="images/blocks/time.webp" type="image/webp")
+                                img(src="images/blocks/time.png" alt="time" width="376" height="395")
+                .header__right
+                    a.header__burger(href="#")
+                        img.header__burger-icon(src="images/icons/burger.svg", alt="burger menu")
+                        img.header__burger-icon.header__burger-hidden(src="images/icons/burger-hover.svg", alt="burger menu")
+                    ul.header__lang
+                        li.header__lang-item
+                            a.header__lang-btn.header__lang-btn--active(href="#") Ru
+                        li.header__lang-item
+                            a.header__lang-btn(href="#") Eng
+
+    main.main
+        section.question
+            .question__inner.container
+                ul.question__list
+                    li.question__item
+                        img.question__duck.question__img(src="images/blocks/textarea-duck.png", alt="duck" width="434" height="370")
+                        p.question__number
+                            span.question__number-num
+                                | 1
+                                span.question__number-num__border 1
+                            | Вопрос
+                        .question__info
+                            h2.question__text Твоя новогодняя традиция?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        p.question__number
+                            span.question__number-num
+                                | 2
+                                span.question__number-num__border 2
+                            | Вопрос
+                        .question__info
+                            h2.question__text Блюдо, без которого не обойдётся новогодний стол?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__donut.question__img(src="images/blocks/textarea-donut.png", alt="donut" width="454" height="363")
+                        p.question__number
+                            span.question__number-num
+                                |   3
+                                span.question__number-num__border 3
+                            | Вопрос
+                        .question__info
+                            h2.question__text Лучший мой подарочек – это…
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__hat.question__img(src="images/blocks/textarea-hat-1.png", alt="hat" width="447" height="305")
+                        p.question__number
+                            span.question__number-num
+                                |   4
+                                span.question__number-num__border 4
+                            | Вопрос
+                        .question__info
+                            h2.question__text Самый любимый новогодний фильм?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__duck-reverse.question__img(src="images/blocks/duck-reverse.png", alt="duck" width="434" height="370")
+                        p.question__number
+                            span.question__number-num
+                                |   5
+                                span.question__number-num__border 5
+                            | Вопрос
+                        .question__info
+                            h2.question__text Лучшее зимнее праздничное развлечение?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__hat-small.question__img(src="images/blocks/textarea-small-hat.png", alt="duck" width="383" height="305")
+                        p.question__number
+                            span.question__number-num
+                                |   6
+                                span.question__number-num__border 6
+                            | Вопрос
+                        .question__info
+                            h2.question__text Самое праздничное новогоднее украшение?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__time.question__img(src="images/blocks/time.png", alt="time" width="222" height="233")
+                        p.question__number
+                            span.question__number-num
+                                |   7
+                                span.question__number-num__border 7
+                            | Вопрос
+                        .question__info
+                            h2.question__text Где спрятать подарки от «домашних» #[br] до Рождества и Нового года?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__donut-8.question__img(src="images/blocks/textarea-donut.png", alt="donut" width="454" height="363")
+                        p.question__number
+                            span.question__number-num
+                                |   8
+                                span.question__number-num__border 8
+                            | Вопрос
+                        .question__info
+                            h2.question__text Самый плохой подарок от Тайного Санты?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__small-hat.question__img(src="images/blocks/textarea-small-hat-2.png", alt="donut" width="384" height="305")
+                        p.question__number
+                            span.question__number-num
+                                |   9
+                                span.question__number-num__border 9
+                            | Вопрос
+                        .question__info
+                            h2.question__text Любимый зимний элемент гардероба?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                    li.question__item
+                        img.question__duck-last.question__img(src="images/blocks/textarea-duck.png", alt="duck" width="434" height="370")
+                        p.question__number
+                            span.question__number-num
+                                |   10
+                                span.question__number-num__border 10
+                            | Вопрос
+                        .question__info
+                            h2.question__text В каком месте лучше всего праздновать #[br] Рождество или Новый год?
+                            .question__textarea
+                                span.question__textarea-shadow
+                                span.question__textarea-border
+                                textarea.question__textarea-field(name="", cols="30", rows="10" placeholder="Введите ответ")
+                            button.question__btn
+                                span Ответить
+                .question__footer
+                    img.question__footer-animal(src="images/blocks/animal.png", alt="animal" width="663" height="380")
+                    p.question__footer-text Спасибо!
+                    a.question__footer-up(href="#")
+                        img(src="images/icons/up.svg", alt="up")
+
+
+

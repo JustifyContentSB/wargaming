@@ -45,7 +45,7 @@
                 <ul class="header__nav-list">
                   <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="#">Адвент-календарь</a></li>
                   <li class="header__nav-item"><a class="header__nav-link" href="#">Новогоднее видео</a></li>
-                  <li class="header__nav-item"><a class="header__nav-link" href="#">100к1</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link" href="100k1.html">100к1</a></li>
                   <li class="header__nav-item"><a class="header__nav-link" href="#">Подборка настроения</a></li>
                   <li class="header__nav-item"><a class="header__nav-link" href="#">Трансляция</a></li>
                 </ul>
@@ -63,10 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="header__right"><a class="header__burger" href="#">
-              <svg>
-                <use href="images/sprites/main.stack.svg#svg-burger"></use>
-              </svg></a>
+          <div class="header__right"><a class="header__burger" href="#"><img class="header__burger-icon" src="images/icons/burger.svg" alt="burger menu"><img class="header__burger-icon header__burger-hidden" src="images/icons/burger-hover.svg" alt="burger menu"></a>
             <ul class="header__lang">
               <li class="header__lang-item"><a class="header__lang-btn header__lang-btn--active" href="#">Ru</a></li>
               <li class="header__lang-item"><a class="header__lang-btn" href="#">Eng</a></li>
@@ -87,13 +84,13 @@
         <div class="mission__inner container">
           <div class="mission__header">
             <p class="mission__header-lead">Начало миссии через</p>
-            <h2 class="big-title mission__header-title"><span class="mission__header-title__main">12 <span class="mission__header-title__days">days</span></span><span class="mission__header-title__fon">12 <span class="mission__header-title__days">days</span></span></h2>
+            <h2 class="big-title mission__header-title"><img src="images/icons/12-days.svg" alt="12 days" width="545" height="168"></h2>
             <p class="mission__header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra. Arcu, adipiscing ultrices nibh congue. Odio turpis enim pulvinar lacus orci.-</p>
           </div>
           <div class="mission__list-wrapper">
             <div class="mission__list swiper-container">
               <div class="mission__wrapper swiper-wrapper">
-                <div class="mission__item swiper-slide">
+                <div class="mission__item mission__item-task swiper-slide">
                   <div class="mission__notepad"><img class="mission__notepad-img" src="images/blocks/mission-text.png" alt="блокнот">
                     <p class="mission__notepad-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac metus, eget aliquet eu nascetur. Sed et aenean risus eget ultricies diam viverra.</p>
                   </div>
@@ -234,11 +231,13 @@
       <div class="park">
         <div class="park__img">
           <picture>
+            <source srcset="images/blocks/park-mob.webp" media="(max-width: 500px)" type="image/webp">
+            <source srcset="images/blocks/park-mob.png" media="(max-width: 500px)" type="image/png">
             <source srcset="images/blocks/park-768.webp" media="(max-width: 768px)" type="image/webp">
             <source srcset="images/blocks/park-768.png" media="(max-width: 768px)" type="image/png">
             <source srcset="images/blocks/park-1366.webp" media="(max-width: 1200px)" type="image/webp">
             <source srcset="images/blocks/park-1366.png" media="(max-width: 1200px)" type="image/png">
-            <source srcset="images/blocks/park.webp" type="image/webp"><img src="images/blocks/park.png" alt="park" width="1920" height="1296">
+            <source srcset="images/blocks/park.webp" type="image/webp"><img src="images/blocks/park.png" alt="park" width="1920" height="1437">
           </picture>
         </div>
       </div>

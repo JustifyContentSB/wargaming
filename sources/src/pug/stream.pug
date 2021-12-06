@@ -1,0 +1,92 @@
+extends base/_layout
+block head
+    title Live Stream
+
+block prepend body
+    body.body-100k
+
+block page
+    header.header.header-stream
+        .header__gradient
+        .header__stars
+        .header__inner.container
+            .header__top
+                .header__ms
+                    img(src="images/icons/ms.svg", alt="ms-1" width="108" height="145")
+                .header__center
+                    .header__center-inner
+                        a.header__logo(href="#")
+                            picture
+                                source(srcset="images/icons/logo.webp" type="image/webp")
+                                img(src="images/icons/logo.png" alt="mission snow 1" width="826" height="210")
+                        nav.header__nav
+                            ul.header__nav-list
+                                li.header__nav-item
+                                    a.header__nav-link.header__nav-link--active(href="#") Адвент-календарь
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Новогоднее видео
+                                li.header__nav-item
+                                    a.header__nav-link(href="100k1.html") 100к1
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Подборка настроения
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Трансляция
+                .header__right
+                    a.header__burger(href="#")
+                        img.header__burger-icon(src="images/icons/burger.svg", alt="burger menu")
+                        img.header__burger-icon.header__burger-hidden(src="images/icons/burger-hover.svg", alt="burger menu")
+                    ul.header__lang
+                        li.header__lang-item
+                            a.header__lang-btn.header__lang-btn--active(href="#") Ru
+                        li.header__lang-item
+                            a.header__lang-btn(href="#") Eng
+
+    main.main
+        section.stream
+            .stream__inner.container
+                .stream__header
+                    h2.mood__title.stream__title
+                        span.mood__title-main 
+                            span.mood__title-easy   Live 
+                            |   Stream
+                        span.mood__title-fon 
+                            span.mood__title-easy   Live 
+                            |   Stream
+                    p.stream__lead.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis pretium vulputate eget ac
+                .stream__content
+                    .stream__content-top
+                        img.stream__content-saturn(src="images/blocks/saturn.png", alt="saturn" width="256" height="234")
+                        img.stream__content-object(src="images/blocks/object.png", alt="object" width="262" height="261")
+                        .stream__content-bl.stream__content-video.
+                            video
+                        .stream__content-bl.stream__content-chat
+                    .stream__content-bottom
+                        img.stream__content-planet(src="images/blocks/planet.png", alt="object" width="206" height="201")
+                        p.stream__content-date 12 дней
+                        .stream__content-img
+                            picture
+                                source(srcset="images/blocks/tablo-mob.webp" media="(max-width: 460px)" type="image/webp")
+                                source(srcset="images/blocks/tablo-mob.png" media="(max-width: 460px)" type="image/png")
+                                source(srcset="images/blocks/tablo.webp" type="image/webp")
+                                img(src="images/blocks/tablo.png" alt="tablo" width="1435" height="490")
+
+    //- .modal.modal-oops
+    //-     a.modal__close(href="#")
+    //-         img(src="images/icons/close.svg", alt="close" width="79" height="79")
+    //-     p.modal-oops__text
+    //-         span.
+    //-             Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    //-     .modal-oops__fon
+    //-         picture
+    //-             source(srcset="images/blocks/oops-mob.webp" media="(max-width: 1200px)" type="image/webp")
+    //-             source(srcset="images/blocks/oops-mob.png" media="(max-width: 1200px)" type="image/png")
+    //-             source(srcset="images/blocks/oops.webp" type="image/webp")
+    //-             img(src="images/blocks/oops.png" alt="oops" width="1000" height="725")
+    //-     img.modal-oops__img(src="images/blocks/oops-text.svg", alt="oops" width="342" height="183")
+
+                
+            
+
+
+
